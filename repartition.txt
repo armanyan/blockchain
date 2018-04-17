@@ -1,0 +1,14 @@
+###### BLOCKCHAIN ########
+
+> Présentation de blockchain (Jerem)
+>>> Historique
+>>> Schéma concept/idée
+>>> Problème de dubble-spending
+> Consensus - algo de consensus
+>>> Proof of work (Semih)
+>>> Proof of stake (Jerem - Arman)
+> Utilisation de blockchain dans bitcoin (Semih)
+>>> Caractéristiques de bitcoins (conso énergie, taille, valeurs...)
+> Autres applications : smartcontract (Arman)
+>>> Concept
+>>> Spéciale Davidyan
