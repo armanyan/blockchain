@@ -1,0 +1,8 @@
+*.toc
+*.synctex.gz
+*.out
+*.aux
+*.nav
+*.snm
+*.log
+Presentation.pdf
