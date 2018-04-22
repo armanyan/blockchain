@@ -8,7 +8,15 @@
 \usepackage{url}
 \usepackage{color}
 \usepackage{tikz}
+\usepackage{fourier, heuristica}
+\usepackage{array, booktabs}
+\usepackage{graphicx}
+%\usepackage[x11names]{xcolor}
+\usepackage{colortbl}
+\usepackage{caption}
+\DeclareCaptionFont{SkyBlue}{\color{SkyBlue}}
 
+\newcommand{\foo}{\color{SkyBlue}\makebox[0pt]{\textbullet}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
 
 \renewcommand{\arraystretch}{1.9}
 \newcommand{\green}[1]{\textcolor{ForestGreen}{#1}}
@@ -31,11 +39,29 @@
 
 \section{Introduction}
 
-\begin{frame}{Historique}
+\begin{frame}{Introduction}{Historique}
+\vspace{-0.5cm}
+	\begin{table}
+		\renewcommand\arraystretch{1.4}\arrayrulecolor{SkyBlue}
+		\vskip -1.5ex
 
+		\begin{tabular}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{10cm}}
+		
+			\toprule
+			\addlinespace[1.5ex]
+			1991 & Premier travail sur une \textbf{chaîne sécurisée de blocs} par \textit{Haber et 	Stornetta}. \\
+			1992 & Incorporation des \textbf{Merkle Trees} au design par \textit{Bayer, Haber et Stornetta}. \\
+			2008 & Première conceptualisation en cryptomonnaie -- \textbf{BitCoin} par 	\textit{Satoshi Nakamoto}.\\
+			2014 & Taille de la blockchain Bitcoin : 20 GB -- BitCoin : 600\$. \\
+			2017 & Taille de la blockchain Bitcoin : 100 GB -- BitCoin : 1500\$. \\
+			2018 & Taille de la blockchain Bitcoin : 164 GB -- BitCoin : 8000\$. \\
+			
+		\end{tabular}
+	\end{table}
+	
 \end{frame}
 
-\begin{frame}{Définition}
+\begin{frame}{Introduction}{Définition}
 \vspace{-1cm}
 	\begin{center}
 		\includegraphics[scale=0.1]{storage.png} 
@@ -64,7 +90,7 @@
 %		 http://www.clipartpanda.com/clipart_images/security-bag-check-clip-art-58416511
 \end{frame}
 
-\begin{frame}{Objectifs}
+\begin{frame}{Introduction}{Objectifs}
 	\vspace{-0.5cm}
 	\begin{columns}
     	\begin{column}{0.48\textwidth}
@@ -116,6 +142,20 @@
 		\end{figure}
 	\end{center}
 \end{frame}
+
+
+\begin{frame}{Fonctionnement}{Merkle Tree}
+	\only<1>{
+	\begin{center}
+		\includegraphics[scale=0.35]{merkle_tree_correct.png} 
+	\end{center}}
+	
+	\only<2>{
+	\begin{center}
+		\includegraphics[scale=0.35]{merkle_tree_incorrect.png} 
+	\end{center}}
+\end{frame}
+
 
 \begin{frame}{Fonctionnement}{Preuve de travail}
 	TODO SEMIH
