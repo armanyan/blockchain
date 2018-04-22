@@ -8,7 +8,7 @@
 \usepackage{url}
 \usepackage{color}
 \usepackage{tikz}
-\usepackage{fourier, heuristica}
+%\usepackage{fourier, heuristica}
 \usepackage{array, booktabs}
 \usepackage{graphicx}
 %\usepackage[x11names]{xcolor}
@@ -158,7 +158,35 @@
 
 
 \begin{frame}{Fonctionnement}{Preuve de travail}
-	TODO SEMIH
+	\only<1>{
+	\begin{center}
+		\includegraphics[scale=0.2]{mining.png}
+	\end{center}
+	\begin{center}
+		La preuve de travail(\textbf{proof-of-work)} est un algorithme de consensus dans un réseau de Blockchain. Cet algorithme est utilisé pour confirmer les transactions et produire des nouveaux blocks dans la chaine en prouvant que des calculs informatique onéreux ont été fait.
+	\end{center}
+	\begin{center}
+		\begin{itemize}
+			\item Utilisé par la plupart des crypto-monnaies(BTC,ETH,...)
+			\item Les transactions du block ajouté sont valides(\color{blue}{pourquoi?}
+			)
+		\end{itemize}
+	\end{center}}
+
+	\only<2>{
+	\begin{figure}
+		\includegraphics[scale=0.15]{pow.jpg} 
+		\caption{proof-of-work(https://cointelegraph.com)}
+	\end{figure}
+	
+	\begin{center}
+		\begin{itemize}
+			\item Le puzzle doit être compliqué à résoudre mais la solution est facile à vérifier
+			\item Le puzzle ne doit être ni trop compliqué ni trop facile
+			\item Le temps moyen pour ajouter un block est de 10 minutes
+			\item Plus il y a de la puissance informatique ajoutée dans le réseau, plus dur seront les puzzle
+		\end{itemize}
+	\end{center}}
 \end{frame}
 
 \section{Smart Contract}
