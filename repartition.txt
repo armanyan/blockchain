@@ -5,10 +5,10 @@
 >>> Schéma concept/idée
 > Consensus - algo de consensus
 >>> Proof of work (Semih)
->>> Proof of stake (Jerem - Arman)
 > Utilisation de blockchain dans bitcoin (Semih)
 >>> Problème de dubble-spending
 >>> Caractéristiques de bitcoins (conso énergie, taille, valeurs...)
+>>> Proof of stake (Jerem - Arman)
 > Autres applications : smartcontract (Arman)
 >>> Concept
 >>> Spéciale Davidyan
